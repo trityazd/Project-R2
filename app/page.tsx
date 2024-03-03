@@ -15,7 +15,7 @@ Client's IT was convinced it was not their firewall or the user's Citrix profile
 However, after much investigation - going through all our internal resources I was able to find out that the application uses Google API to fetch and load the GPS location.
 Also, went through past cases within Zendesk logged for similar issues. They all pointed out to reset the user's Citrix profile or request that It check the Firewall settings.
 To confirm my findings and have the client convinced I had dev review client DB and check for issue within our application. They confirmed my analysis and findings were correct.
-As a result client was suggested to check their Firewall settings and reset the user's Citrix profile and the issue was resolved.<br></br>
+As a result client was suggested to check their Firewall settings and reset the user's Citrix profile and the issue was resolved.<br></br><br></br>
 
  <code className="font-mono font-bold"> 5. Imagine a customer writes in requesting help with a build issue on a framework or
 technology that you've not seen before. How would you begin troubleshooting this and
@@ -37,12 +37,20 @@ out. It must be a platform issue so just fix it for me instead of asking me ques
 Also, share with them the next steps in my action plan to proceed with the investigation. Based on the complexity and dependency of the issue (if Dev is required or not) give them a ballpark for ETA (over-promise, under-delivery)
 This should give the customer assurance that I'm actively working on their issue and doing everything in my reach to have it resolved. <br></br><br></br>
 
-<code className="font-mono font-bold"> 6. The customer from question 5 replies to your response with the below:
-“I’m so frustrated. I’ve been trying to make this work for hours and I just can’t figure it
-out. It must be a platform issue so just fix it for me instead of asking me questions.”</code> <br></br>   
+<code className="font-mono font-bold"> 7. A customer writes in to the Helpdesk asking "How do I do a redirect from the /blog path
+to https://example.com?" Please write a reply to the customer. Feel free to add any
+information about your decision making process after the reply.</code> <br></br>   
 
-          
-
+The example below redirects requests to the path /blog from your site's root to the absolute path https://example.com?/vercel/vercel of an external site with a redirect status of 308:      
+ "redirects": [
+    {
+      "source": "/blog",
+      "destination": "https://example.com?/vercel/vercel"
+    }
+  ]
+}
+          For Best Practices on redirects implementation please refer to our help page here : https://vercel.com/docs/edge-network/redirects
+          Also, for more examples on how you could use redirects in your Vercel project please refer to our help guide here : https://vercel.com/docs/projects/project-configuration#legacy-redirects
 </p>
 
         
