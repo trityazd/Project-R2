@@ -27,7 +27,23 @@ what questions would you ask the customer to understand the situation better?</c
 -Look through internal resources (documentation on the technology, past tickets for similar issues logged) to seek more info on the framework/technology. Also, Google the info to learn about it, and probably check out some quick intro videos on the technology to understand it better that could then help me with troubleshooting.
 -Get on-call (Zoom/Teams) with the customer if needed arises to learn more about the issue/application and how did arrive at the problem.
 -Request remote connection or DB backup so I could troubleshoot the application for root cause analysis 
-        </p>
+-Is there any troubleshooting actioned by the customer so far <br></br><br></br>
+
+<code className="font-mono font-bold"> 6. The customer from question 5 replies to your response with the below:
+“I’m so frustrated. I’ve been trying to make this work for hours and I just can’t figure it
+out. It must be a platform issue so just fix it for me instead of asking me questions.”</code> <br></br>   
+
+-It would be in the best interest of the customer to get on a quick Zoom call and discuss what has been done so far in my investigation, and what troubleshooting steps have been actioned.
+Also, share with them the next steps in my action plan to proceed with the investigation. Based on the complexity and dependency of the issue (if Dev is required or not) give them a ballpark for ETA (over-promise, under-delivery)
+This should give the customer assurance that I'm actively working on their issue and doing everything in my reach to have it resolved. <br></br><br></br>
+
+<code className="font-mono font-bold"> 6. The customer from question 5 replies to your response with the below:
+“I’m so frustrated. I’ve been trying to make this work for hours and I just can’t figure it
+out. It must be a platform issue so just fix it for me instead of asking me questions.”</code> <br></br>   
+
+          
+
+</p>
 
         
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
