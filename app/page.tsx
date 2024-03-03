@@ -6,12 +6,12 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p >
           <code className="font-mono font-bold"> 2. What do you want to learn or do more of at work? </code> <br></br>
-         Learn new technical skills and software tools that is being used widely such as Salesforce, React, etc <br></br>
+         Learn new technical skills and software tools that is being used widely such as Salesforce, React, etc <br></br><br></br>
 
-          <code className="font-mono font-bold"> Describe how you solved a challenge or technical issue that you faced in a previous role.How did you determine that your solution was
+          <code className="font-mono font-bold"> 3.Describe how you solved a challenge or technical issue that you faced in a previous role.How did you determine that your solution was
 successful? </code> <br></br>
-   The client could not load GPS locations for their users within the application. It happens their users were logging using Citrix as a result of which it was acting as a firewall and not letting our
-API access the Google API to load the GPS. Client's IT was convinced it was not their firewall or the user's Citrix profile that was an issue.
+   The client could not load GPS locations for their users within the application. It happens their users were using Citrix to access our software.
+Client's IT was convinced it was not their firewall or the user's Citrix profile that was an issue.
 However, after much investigation - going through all our internal resources I was able to find out that the application uses Google API to fetch and load the GPS location.
 Also, went through past cases within Zendesk logged for similar issues. They all pointed out to reset the user's Citrix profile or request that It check the Firewall settings.
 To confirm my findings and have the client convinced I had dev review client DB and check for issue within our application. They confirmed my analysis and findings were correct.
