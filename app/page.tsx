@@ -15,7 +15,18 @@ Client's IT was convinced it was not their firewall or the user's Citrix profile
 However, after much investigation - going through all our internal resources I was able to find out that the application uses Google API to fetch and load the GPS location.
 Also, went through past cases within Zendesk logged for similar issues. They all pointed out to reset the user's Citrix profile or request that It check the Firewall settings.
 To confirm my findings and have the client convinced I had dev review client DB and check for issue within our application. They confirmed my analysis and findings were correct.
-As a result client was suggested to check their Firewall settings and reset the user's Citrix profile and the issue was resolved.
+As a result client was suggested to check their Firewall settings and reset the user's Citrix profile and the issue was resolved.<br></br>
+
+ <code className="font-mono font-bold"> 5. Imagine a customer writes in requesting help with a build issue on a framework or
+technology that you've not seen before. How would you begin troubleshooting this and
+what questions would you ask the customer to understand the situation better?</code> <br></br>          
+
+-What is the issue exactly - Reprod steps
+-Screenshots of the issue
+-When did they start to experience problems with the application? Were there any changes/updates made recently that could have led the to issue?
+-Look through internal resources (documentation on the technology, past tickets for similar issues logged) to seek more info on the framework/technology. Also, Google the info to learn about it, and probably check out some quick intro videos on the technology to understand it better that could then help me with troubleshooting.
+-Get on-call (Zoom/Teams) with the customer if needed arises to learn more about the issue/application and how did arrive at the problem.
+-Request remote connection or DB backup so I could troubleshoot the application for root cause analysis 
         </p>
 
         
