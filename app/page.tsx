@@ -41,16 +41,12 @@ This should give the customer assurance that I'm actively working on their issue
 to https://example.com?" Please write a reply to the customer. Feel free to add any
 information about your decision making process after the reply.</code> <br></br>   
 
-The example below redirects requests to the path /blog from your site's root to the absolute path https://example.com?/vercel/vercel of an external site with a redirect status of 308:      
-          {/* "redirects": [
-    {
-      "source": "/blog",
-      "destination": "https://example.com?/vercel/vercel"
-    }
-  ]
-} */}
-          For Best Practices on redirects implementation please refer to our help page here : https://vercel.com/docs/edge-network/redirects
-          Also, for more examples on how you could use redirects in your Vercel project please refer to our help guide here : https://vercel.com/docs/projects/project-configuration#legacy-redirects
+The example below redirects requests to the path /blog from your site's root to the absolute path https://example.com?/vercel/vercel of an external site with a redirect status of 308: <br></br>
+      redirects:
+      "source": "/blog"
+      "destination": "https://example.com?/vercel/vercel" 
+        For Best Practices on redirects implementation please refer to our help page here : https://vercel.com/docs/edge-network/redirects
+        Also, for more examples on how you could use redirects in your Vercel project please refer to our help guide here : https://vercel.com/docs/projects/project-configuration#legacy-redirects
 
           
 </p>
