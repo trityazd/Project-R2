@@ -44,10 +44,33 @@ information about your decision making process after the reply.</code> <br></br>
 The example below redirects requests to the path /blog from your site's root to the absolute path https://example.com?/vercel/vercel of an external site with a redirect status of 308: <br></br>
       redirects:
       "source": "/blog"
-      "destination": "https://example.com?/vercel/vercel" 
+      "destination": "https://example.com?/vercel/vercel" <br></br>
         For Best Practices on redirects implementation please refer to our help page here : https://vercel.com/docs/edge-network/redirects
-        Also, for more examples on how you could use redirects in your Vercel project please refer to our help guide here : https://vercel.com/docs/projects/project-configuration#legacy-redirects
+        Also, for more examples of how you could use redirects in your Vercel project please refer to our help guide here : https://vercel.com/docs/projects/project-configuration#legacy-redirects
 
+          <code className="font-mono font-bold"> 8. A customer is creating a site and would like their project not to be indexed by search
+engines. Please write a reply to the customer. Feel free to add any information about
+your decision making process after the reply.</code> <br></br>   
+
+Ideally, Vercel Preview Deployments are not indexed by search engines by default because the X-Robots-Tag HTTP header is set to noindex. However, if using a Custom Domain for your preview deployments the default behavior is to omit the X-Robots-Tag: noindex.<br></br>
+To overcome this there are two ways of achieving this:<br></br>
+
+1.You should first look to inject the response header using your framework's built-in methods.<br></br>
+2.If you are not using a framework or your framework does not support injecting response headers, you may modify the Header object in your vercel.json file.<br></br>
+
+Please click on the link : https://vercel.com/guides/are-vercel-preview-deployment-indexed-by-search-engines for more info on the code example snippet that can be used in each of the above 2 cases<br></br>
+Note: The recommended approach would be injecting headers using your framework's built-in methods. And doing so through vercel.json should only be as a last resort and may lead to other problems.<br></br><br></br>
+
+ <code className="font-mono font-bold"> 9.What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, short-term and long-term?</code> <br></br>
+
+          Based on some of the past tickets logged(https://www.vercel-status.com/history) the Deployments being triggered from GitHub are queued or there is a delay in the overall deployment.
+Also, could get tricky to find the info from the help page and guide section if the client does not use the correct keyword to search for relevant info. Hence they end up asking for support thereby increasing ticket volume and consuming support agents' time which could be dedicated to some other critical ticket/issue
+
+If there is a help article/guide for the issue reported I would share this with the customer. If required I would also prepare a quick guide myself that can be used for future reference by the customer & shared internally by them for knowledge transfer..<br></br><br></br>
+
+ <code className="font-mono font-bold"> 10. How could we improve or alter this familiarisation exercise?</code> <br></br>
+          
+          
           
 </p>
 
