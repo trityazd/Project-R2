@@ -51,6 +51,8 @@ The example below redirects requests to the path /blog from your site's root to 
 }
           For Best Practices on redirects implementation please refer to our help page here : https://vercel.com/docs/edge-network/redirects
           Also, for more examples on how you could use redirects in your Vercel project please refer to our help guide here : https://vercel.com/docs/projects/project-configuration#legacy-redirects
+
+          
 </p>
 
         
