@@ -13,7 +13,7 @@ successful? </code> <br></br>
    The client could not load GPS locations for their users within the application. It happens their users were using Citrix to access our software.
 Client's IT was convinced it was not their firewall or the user's Citrix profile that was an issue.
 However, after much investigation - going through all our internal resources I was able to find out that the application uses Google API to fetch and load the GPS location.
-Also, went through past cases within Zendesk logged for similar issues. They all pointed out to reset the user's Citrix profile or request that It check the Firewall settings.
+Also, went through past cases within Zendesk logged for similar issues. They all pointed out to reset the user's Citrix profile or request that IT check the Firewall settings.
 To confirm my findings and have the client convinced I had dev review client DB and check for issue within our application. They confirmed my analysis and findings were correct.
 As a result client was suggested to check their Firewall settings and reset the user's Citrix profile and the issue was resolved.<br></br><br></br>
 
@@ -29,21 +29,18 @@ Responses from Edge Functions can be cached and streamed in real time.<br></br>
 
 Additionally Serverless Functions are region-first, while Edge Functions are executed close to the end-users across Vercel's global network. When you deploy Edge Functions, there are considerations you need to make about
 where it's deployed and executes. Edge Functions are executed globally and in a region close to the user's request. However, if your data source is geographically far from this request, any response will be slow. 
-Because of this you can opt to execute your function closer to your data source. Users on Enterprise plans can deploy Serverless Functions to multiple regions. On non-Enterprise plans, deploying to multiple regions will fail before entering the build step. Users on any plan can deploy Edge Functions to multiple regions.<br></br>        
+Because of this you can opt to execute your function closer to your data source. Users on Enterprise plans can deploy Serverless Functions to multiple regions. On non-Enterprise plans, deploying to multiple regions will fail before entering the build step. Users on any plan can deploy Edge Functions to multiple regions.<br></br><br></br>
        
-          
-          
-
  <code className="font-mono font-bold"> 5. Imagine a customer writes in requesting help with a build issue on a framework or
 technology that you've not seen before. How would you begin troubleshooting this and
 what questions would you ask the customer to understand the situation better?</code> <br></br>          
 
--What is the issue exactly - Reprod steps
--Screenshots of the issue
--When did they start to experience problems with the application? Were there any changes/updates made recently that could have led the to issue?
--Look through internal resources (documentation on the technology, past tickets for similar issues logged) to seek more info on the framework/technology. Also, Google the info to learn about it, and probably check out some quick intro videos on the technology to understand it better that could then help me with troubleshooting.
--Get on-call (Zoom/Teams) with the customer if needed arises to learn more about the issue/application and how did arrive at the problem.
--Request remote connection or DB backup so I could troubleshoot the application for root cause analysis 
+-What is the issue exactly - Reprod steps<br></br>
+-Screenshots of the issue<br></br>
+-When did they start to experience problems with the application? Were there any changes/updates made recently that could have led the to issue?<br></br>
+-Look through internal resources (documentation on the technology, past tickets for similar issues logged) to seek more info on the framework/technology. Also, Google the info to learn about it, and probably check out some quick intro videos on the technology to understand it better that could then help me with troubleshooting.<br></br>
+-Get on-call (Zoom/Teams) with the customer if needed arises to learn more about the issue/application and how did arrive at the problem.<br></br>
+-Request remote connection or DB backup so I could troubleshoot the application for root cause analysis<br></br>
 -Is there any troubleshooting actioned by the customer so far <br></br><br></br>
 
 <code className="font-mono font-bold"> 6. The customer from question 5 replies to your response with the below:
@@ -88,11 +85,9 @@ If there is a help article/guide for the issue reported I would share this with 
  <code className="font-mono font-bold"> 10. How could we improve or alter this familiarisation exercise?</code> <br></br>
           
 Q9 the part that asks "What do you think is one of the most common problems that customers ask Vercel for help with?". This is hard for someone to come up with a relevant response as we are
-sitting on the other end of the application and at this point suggest points based on the Help Guide section or our own experience.<br></br>
+sitting on the other end of the application and at this point provide suggestions based on the Help Guide section or our own experience.<br></br>
 
-Also, the other part asks "How would you help customers to overcome common problems, short-term and long-term?". It could be omitted from Q9 as one could tell how the individual would respond based on answers from Q 3,5,6,7  
-          
-          
+Also, the other part asks "How would you help customers to overcome common problems, short-term and long-term?". It could be omitted from Q9 as one could tell how the individual would respond based on answers from Q 3,5,6,7.
           
 </p>
 
