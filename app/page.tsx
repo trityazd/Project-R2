@@ -17,6 +17,23 @@ Also, went through past cases within Zendesk logged for similar issues. They all
 To confirm my findings and have the client convinced I had dev review client DB and check for issue within our application. They confirmed my analysis and findings were correct.
 As a result client was suggested to check their Firewall settings and reset the user's Citrix profile and the issue was resolved.<br></br><br></br>
 
+ <code className="font-mono font-bold"> 4. When would you choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel? </code> <br></br>
+
+          Usually, when writing TypeScript or JavaScript functions, you'll be deciding between the Node.js or Edge runtime. 
+Node.js-powered functions (Serverless) are suited for computationally intense workloads, or large functions that have bundles up to 250 MB in size, this runtime is ideal.
+The Node.js runtime offers access to all Node.js APIs, making it a powerful tool for many applications, although it may take them longer to boot than those using the Edge runtime.<br></br>
+
+Edge functions can be a cost-effective option and provide benefit of being lightweight with a slim runtime.Globally distributed by default – Vercel deploys all Edge Functions globally across its Edge Network, which means your site's visitors will get API responses from data centers geographically near them, typically reducing the overall response time
+Pricing is based on compute time – You're charged for time processing any requests and not for your function is fetching data. This is ideal for querying databases or AI services that may have longer request times
+Responses from Edge Functions can be cached and streamed in real time.<br></br>     
+
+Additionally Serverless Functions are region-first, while Edge Functions are executed close to the end-users across Vercel's global network. When you deploy Edge Functions, there are considerations you need to make about
+where it's deployed and executes. Edge Functions are executed globally and in a region close to the user's request. However, if your data source is geographically far from this request, any response will be slow. 
+Because of this you can opt to execute your function closer to your data source. Users on Enterprise plans can deploy Serverless Functions to multiple regions. On non-Enterprise plans, deploying to multiple regions will fail before entering the build step. Users on any plan can deploy Edge Functions to multiple regions.<br></br>        
+       
+          
+          
+
  <code className="font-mono font-bold"> 5. Imagine a customer writes in requesting help with a build issue on a framework or
 technology that you've not seen before. How would you begin troubleshooting this and
 what questions would you ask the customer to understand the situation better?</code> <br></br>          
@@ -64,11 +81,16 @@ Note: The recommended approach would be injecting headers using your framework's
  <code className="font-mono font-bold"> 9.What do you think is one of the most common problems which customers ask Vercel for help with? How would you help customers to overcome common problems, short-term and long-term?</code> <br></br>
 
           Based on some of the past tickets logged(https://www.vercel-status.com/history) the Deployments being triggered from GitHub are queued or there is a delay in the overall deployment.
-Also, could get tricky to find the info from the help page and guide section if the client does not use the correct keyword to search for relevant info. Hence they end up asking for support thereby increasing ticket volume and consuming support agents' time which could be dedicated to some other critical ticket/issue
+Also, could get tricky to find the info from the help page and guide section if the client does not use the correct keyword to search for relevant info. Hence they end up asking for support thereby increasing ticket volume and consuming support agents' time which could be dedicated to some other critical ticket/issue<br></br>
 
 If there is a help article/guide for the issue reported I would share this with the customer. If required I would also prepare a quick guide myself that can be used for future reference by the customer & shared internally by them for knowledge transfer..<br></br><br></br>
 
  <code className="font-mono font-bold"> 10. How could we improve or alter this familiarisation exercise?</code> <br></br>
+          
+Q9 the part that asks "What do you think is one of the most common problems that customers ask Vercel for help with?". This is hard for someone to come up with a relevant response as we are
+sitting on the other end of the application and at this point suggest points based on the Help Guide section or our own experience.<br></br>
+
+Also, the other part asks "How would you help customers to overcome common problems, short-term and long-term?". It could be omitted from Q9 as one could tell how the individual would respond based on answers from Q 3,5,6,7  
           
           
           
