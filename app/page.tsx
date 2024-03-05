@@ -59,7 +59,7 @@ The example below redirects requests to the path /blog from your site's root to 
       redirects:<br></br>
       "source": "/blog"<br></br>
       "destination": "https://example.com?/vercel/vercel" <br></br>
-        For Best Practices on redirects implementation please refer to our help page here : https://vercel.com/docs/edge-network/redirects>br>
+        For Best Practices on redirects implementation please refer to our help page here : https://vercel.com/docs/edge-network/redirects <br></br>
         Also, for more examples of how you could use redirects in your Vercel project please refer to our help guide here : https://vercel.com/docs/projects/project-configuration#legacy-redirects <br></br><br></br>
 
           <code className="font-mono font-bold"> 8. A customer is creating a site and would like their project not to be indexed by search
